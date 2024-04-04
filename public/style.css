@@ -1,0 +1,83 @@
+:root {
+  font-family: "Source Serif 4", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  color-scheme: light dark;
+  background-color: #141414;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 5em;
+  line-height: 0.3;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto 15%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.links-box {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+  width: 156px;
+  height: 32px;
+}
+
+.link-item {
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.svg-link {
+  color: #ffffff;
+}
+
+.svg-link:hover {
+  color: #dddddd;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #141414;
+    background-color: #ffffff;
+  }
+  .svg-link {
+    color: #141414;
+  }
+  .svg-link:hover {
+    color: #3e3e3e;
+  }
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 3em;
+    line-height: 0.5;
+  }
+  .links-box {
+    gap: 20px;
+  }
+}
